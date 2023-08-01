@@ -1,14 +1,22 @@
 ﻿State tasarım deseni, bir nesnenin davranışını nesnenin durumuna bağlı olarak değiştiren bir davranışsal tasarım desenidir.
-Bu desen, nesnenin farklı durumlarını temsil eden sınıfları ve her durum altında farklı davranışları tanımlayan metodları içerir. 
-Nesnenin durumu değiştiğinde, o anda geçerli olan duruma ait davranışlar da otomatik olarak değişir.
 
+Bu desen, nesnenin farklı durumlarını temsil eden sınıfları ve her durum altında farklı davranışları tanımlayan metodları içerir. 
+
+Nesnenin durumu değiştiğinde, o anda geçerli olan duruma ait davranışlar da otomatik olarak değişir.
+ 
 State deseninde temel unsurlar şunlardır:
 
 Context (Bağlam): Durumu değiştirilecek olan nesnedir. State nesnesiyle iletişim kurar.
+
 State (Durum): Farklı durumları temsil eden arayüzdür ve davranışları tanımlayan metotları içerir.
+
 ConcreteState (SomutDurum): State arayüzünü uygulayan ve belirli bir durumu temsil eden sınıftır. Context üzerindeki durumu değiştirir.
+
 Bu örnekte, Order sınıfı durumu değiştirilecek olan Context'i temsil ederken,
+
 IOrderState arayüzü ise farklı durumları temsil eden State arayüzünü tanımlar.
+
 NewOrderState, ProcessingOrderState ve CancelledOrderState sınıfları farklı durumları temsil eden ConcreteState sınıflarıdır.
+
 Order sınıfında siparişin durumunu değiştiren ProcessOrder ve CancelOrder metotları bulunmaktadır. 
 Her bir durumda davranış farklıdır ve otomatik olarak geçerli duruma göre uygulanır.

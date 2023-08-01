@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using StateDesignPattern.Context;
+using StateDesignPattern.State;
 
-namespace StateDesignPattern
+namespace StateDesignPattern.ConcreteState
 {
     public class ProcessingOrderState : IOrderState
     {

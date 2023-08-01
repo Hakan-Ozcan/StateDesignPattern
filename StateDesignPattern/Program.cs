@@ -1,5 +1,4 @@
-﻿
-using StateDesignPattern;
+﻿using StateDesignPattern.Context;
 
 public class Program
 {
